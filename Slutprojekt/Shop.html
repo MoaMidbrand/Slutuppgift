@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="CSS/Style-Shop.css">
+   <!-- <script src="script.js" defer></script> -->
+    <title>Shop</title>
+     
+</head>
+<body>
+    <header>
+        <div class="headerbox">
+            <div class="flexboxtop1"><img src="CSS/Images/RETRO-logo1.png" alt="Logotype"></div>
+            <div class="flexboxtop2"><a href="Index.html" id="menu1">Hem</a></div>
+            <div class="flexboxtop3"><a href="Shop.html" id="menu2">Shop</a></div>
+            <div class="flexboxtop4">
+                <img onclick="swedishFunction()" src="CSS/Images/SWE-flag.png" class="flags" alt="Swedish flag">
+                <img onclick="englishFunction()" src="css/Images/UK-flag.png" class="flags" alt="UK flag">
+            </div>
+        </div>
+
+        <div class="mobile-container">
+            <div class="img"><img src="CSS/Images/RETRO-logo1.png" alt="Logotype"></div>
+            <div id="myLinks">
+                <a href="index.html"id="menu3">Hem</a>
+                <a href="Shop.html"id="menu4">Shop</a>
+                <img onclick="swedishFunction()" src="CSS/Images/SWE-flag.png" id="flag">
+                <img onclick="englishFunction()" src="css/Images/UK-flag.png" id="flag">
+            </div>
+           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i> 
+           </a>
+    </header>
+
+<div class="container">
+    <div class="products" id="product0">
+            <img src="CSS/Images/PSX-Console-wController.png" alt="PSX-console"style="height: 200px; width: 350px;"/>
+            <h1 class="h1Products">Playstation</h1>
+            <p class="theProducts" id="product0text">
+                Playstation konsoll från år 1995 (Minne säljs separat)
+            </p>
+        <h2>990 SEK</h2>
+        <button onclick="myBuy()" class="buyButton">Köp nu</button>
+    </div>
+
+    <div class="products" id="product1">
+            <img src="CSS/Images/640px-GameCube-Console-Set.png" alt="Gamecube"style="height: 200px;width: 350px;">
+        <h1 class="h1Products">GameCube</h1>
+            <p class="theProducts" id="product1text">
+                Gamecube från 2001, Begagnat och renoverat.
+            </p>
+        <h2>700 SEK</h2>
+        <button onclick="myBuy()" class="buyButton">Köp nu</button>
+    </div>
+
+    <div class="products" id="product2">
+            <img src="CSS/Images/N64-Console-Set.png" alt="N64"style="height: 200px;width: 350px;"/>
+            <h1 class="h1Products">Nintendo 64</h1>
+            <p class="theProducts" id="product2text">
+                Spelkonsoll från år 1994. Spel säljs separat.
+            </p>
+        <h2>600 SEK</h2>
+        <button onclick="myBuy()" class="buyButton">Köp nu</button>
+    </div>
+
+    <div class="products" id="product3">
+            <img src="CSS/Images/Xbox-Console-Set.png" alt="Xbox" style="height: 200px; width: 350px;"/>
+            <h1 class="h1Products">Xbox</h1>
+            <p class="theProducts"id="product3text">
+                Xbox från år 2001. Spel inkluderat.
+            </p>
+        <h2>550 SEK</h2>
+        <button onclick="myBuy()" class="buyButton">Köp nu</button>
+    </div>
+
+    <div class="products" id="product4">
+            <img src="CSS/Images/960px-Nintendo-DS-Lite-w-stylus.png" alt="Nintendo DS" style="height: 200px;width: 350px;"/>
+            <h1 class="h1Products">Nintendo DS lite</h1>
+            <p class="theProducts"id="product4text">
+                Handhållen spelkonsoll med touchskärm och en styluspenna, släpptes år 2006.
+            </p>
+        <h2>400 SEK</h2>
+        <button onclick="myBuy()" class="buyButton">Köp nu</button>
+    </div>
+
+    <div class="products" id="product5">
+            <img src="CSS/Images/Nintendo_Switch_Console.png" alt="Nintendo switch"style="height: 200px; width: 350px;"/>
+            <h1 class="h1Products">Nintendo Switch</h1>
+            <p class="theProducts"id="product5text">
+                En portabel konsol från år 2017. En unik spelkonsoll som kan användas både hemma och som en handhållen konsoll.
+            </p>
+        <h2>990 SEK</h2>
+        <button onclick="myBuy()" class="buyButton">Köp nu</button>
+    </div>
+
+    <div class="products" id="product6">
+            <img src="CSS/Images/Wii-Console.png" alt="Wii" style="height:200px;width: 350px;"/>
+            <h1 class="h1Products">Nintendo Wii</h1>
+            <p class="theProducts"id="product6text">
+                Konsoll från 2010 med handkontroll (nunchuck ingår ej)
+            </p>
+        <h2>450 SEK</h2>
+        <button onclick="myBuy()" class="buyButton">Köp nu</button>
+    </div>
+
+    <div class="products" id="product7">
+            <img src="CSS/Images/Sega-Genesis-Mk2-6button.png" alt="Sega genesis" style=" height: 200px; width: 350px;"/>
+            <h1 class="h1Products">Sega Genesis</h1>
+            <p class="theProducts"id="product7text">
+                Släpptes år 1988. Renoverat och i bra skick.
+            </p>
+        <h2>1200 SEK</h2>
+        <button onclick="myBuy()" class="buyButton">Köp nu</button>
+    </div>
+
+    <div class="products" id="product8">
+            <img src="CSS/Images/640px-Atari-2600-Wood-4Sw-Set.png" alt="Atari 2600"style="height:200px; width: 350px;" />
+            <h1 class="h1Products">Atari 2600</h1>
+            <p class="theProducts"id="product8text">
+                Atari konsoll från  år 1981. Oöppnad förpackning.
+            </p>
+        <h2>2500 SEK</h2>
+        <button onclick="myBuy()" class="buyButton">Köp nu</button>
+    </div>
+
+    <div class="products" id="product9">     
+            <img src="CSS/Images/PS2-Fat-Console-Set.png" alt="Ps2" style="height: 200px; width: 350px;"/>
+            <h1 class="h1Products">Playstation 2</h1>
+            <p class="theProducts"id="product9text">
+                Den andra generationens spelkonsoll, utgivare: Sony släpptes år 2000.
+            </p>
+        <h2>1200 SEK</h2>
+        <button onclick="myBuy()" class="buyButton">Köp nu</button>
+    </div>
+</div>
+
+<Footer>
+    <div class="flex-container">
+        <div class="flexbox1"><p id="menu5">Telefon: 044- 1337 420</p></div>
+        <div class="flexbox2"><a href="https://maps.app.goo.gl/QjjgdyHMEBBTaaWE7">Karta</a></div>
+        <div class="flexbox3"><p id="menu7">Sociala medier:</div>
+        <div class="flexbox4"><a href="https://www.linkedin.com/in/moa-midbrand/" id="menu8">LinkedIn</a></div>
+        </div>
+</Footer>
+</body>
+</html>
+<script src="script.js"></script>

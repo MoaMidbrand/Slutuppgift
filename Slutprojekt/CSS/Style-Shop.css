@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+  }
+  .a {
+    background-color: rgb(253, 153, 239);
+  }
+}
+@media (prefers-color-scheme: light) {
+  body {
+    background: #fff;
+  }
+}
+
+.mobile-container{
+  visibility: hidden;
+  
+}
+.headerbox {
+  flex-wrap: wrap;
+  display: flex;
+  padding: 0em 0em 0em 0em;
+  background-color: #000;
+  
+}
+.flexboxtop1 {
+  height: fit-content;
+  width: 30vw;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background-size:cover;
+ 
+}
+.flexboxtop2 {
+  height: 2em;
+  width: 20vw;
+  text-align: center;
+  padding-top: 15px;
+  
+}
+.flexboxtop3 {
+  height: 2em;
+  width: 20vw;
+  text-align: center;
+  padding-top: 15px;
+}
+.flexboxtop4{
+  height: 2em;
+  width: 25vw;
+  padding-top: 15px;
+  float: right;
+}
+
+.flag {
+  height: 2em;
+  padding-right:0.5em;
+  float: right;
+  rotate: 90deg;
+}
+#myLinks{
+  height: 1em;
+}
+/* Main produkter på body */
+.container {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: space-evenly;
+  row-gap: 50px;
+  align-items:center;
+  opacity: 90%;
+  column-gap: 2em;
+}
+.products {
+  height: 20em;
+  width: 20em;
+  background-color: rgb(251, 183, 242);
+  padding: 15px;
+  
+  
+}
+
+.flex-container {
+  background-color: rgb(251, 183, 242);
+  height: 4em;
+  width: 100%;
+  bottom: 0; 
+  display: flex;
+  justify-content: center;
+  opacity: 60%;
+}
+.flexbox1 {
+width: 30vw;
+height: 3em;
+padding-top: 1em;
+
+}.flexbox2 {
+width: 15vw;
+height: 3em;
+padding-top: 1em;
+
+}
+.flexbox3 {
+width: 25vw;
+height: 3em;
+padding-top: 1em;
+
+}
+.flexbox4 {
+width: 20vw;
+height: 3em;
+padding-top: 1em;
+}
+
+.flags {
+  height: 2em;
+  rotate: 90deg;
+
+}
+@media (max-width:1000px) {
+  .container {
+    grid-template-columns: 40% 40%;
+    column-gap: 15px;
+  }
+}
+
+
+@media  (max-width:600px) {
+  
+  .mobile-container {
+    overflow: hidden;
+    background-color: #000;
+    position: relative;
+    visibility: visible;
+    
+  }
+  
+  .mobile-container #myLinks {
+    display: none;
+  
+  }
+  .headerbox {
+    display: none;
+  }
+  /* Style navigation menu links */
+  .mobile-container a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .mobile-container a.icon {
+    background-color: #333;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .mobile-container a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+ .container{
+    
+    border: #333;
+    border-width: 2px;
+    display: flex;
+    row-gap: 10px;
+    column-gap: 10px;
+    flex-wrap: wrap;
+    
+ }
+  .products {
+    height:fit-content;
+    
+    background-color: rgb(255, 182, 245);
+    display:grid;
+    border-color: black;
+    border:2px;
+    flex-direction: column;
+    row-gap: 1em;
+    margin-bottom: 1em;
+    
+  }
+  #flag {
+    height: 2em;
+    padding-right:1em;
+    padding-left: 1em;
+
+  } 
+}
